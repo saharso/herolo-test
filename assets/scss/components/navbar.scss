@@ -1,0 +1,29 @@
+.c-navbar {
+    width: running( $navbar-cubic );
+}
+.c-navbar-width {
+    width: running( $navbar-width );
+}
+
+.c-settingsPanel {
+    position: absolute; 
+    top: 100%;
+    right: 0;
+}
+.c-header-mobileMenuBtn {
+    display: none;
+}
+.c-navbar-routeList {
+    display: block;
+    .t-nav-control {
+        &.is-active {
+            background-color: $c-grey-l;
+            color: $c1;
+        }
+    }
+}
+@media ( max-width: $mq-mobile ){
+    .c-navbar {
+        width: 0;
+    }
+}
